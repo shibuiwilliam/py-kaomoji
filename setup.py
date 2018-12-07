@@ -30,5 +30,5 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3.6',
     ],
-    test="test",
+    test_suite="test",
 )
