@@ -13,7 +13,7 @@ with open('README.rst') as readme_file:
 info = sys.version_info
 
 setup(
-    name='kaomoji',
+    name='py_kaomoji',
     version='0.1',
     description='Python Boilerplate contains all the boilerplate you need to create a Python package.',
     long_description=readme,

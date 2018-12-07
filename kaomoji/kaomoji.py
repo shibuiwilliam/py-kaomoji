@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
+
 import yaml
 import random
 import os
 
-FILE_PATH = os.path.abspath("./kaomoji/kaomojis.yml")
+# DIR = os.path.dirname(os.path.abspath(__file__))
+# FILE_PATH = os.path.join(DIR, "kaomojis.yml")
+FILE_PATH = "data/kaomojis.yml"
 
 class Kaomoji(object):
     def __init__(self, 
@@ -40,3 +44,10 @@ class Kaomoji(object):
         n = random.randint(1, len(self._all_kaomoji))
         _rk = self.random_kaomoji(n)
         return " ".join(_rk)
+
+def __main__():
+    kao = Kaomoji()
+    print(kao()[0])
+
+if __name__ == "__main__":
+    __main__()
