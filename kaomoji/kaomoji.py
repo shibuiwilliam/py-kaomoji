@@ -3,25 +3,16 @@
 import yaml
 import random
 import os
-
-# DIR = os.path.dirname(os.path.abspath(__file__))
-# FILE_PATH = os.path.join(DIR, "kaomojis.yml")
-FILE_PATH = "data/kaomojis.yml"
+from data import load_kaomojis
 
 class Kaomoji(object):
-    def __init__(self, 
-                 file=FILE_PATH):
-        self._file = file
-        self.kaomoji_dict = self.load_kaomoji(self._file)
+    def __init__(self):
+        self.kaomoji_dict = load_kaomojis.load_kaomojis()
         self._all_kaomoji = self.all_kaomoji()
         
     def __call__(self, n=1):
         return self.random_kaomoji(n)
         
-    def load_kaomoji(self, file):
-        _f = open(file, "r+",encoding='utf-8')
-        return yaml.load(_f)
-
     def kaomoji(self, nihongo):
         _k = self.kaomoji_dict[nihongo]
         if isinstance(_k, list):
