@@ -26,9 +26,10 @@ setup(
     keywords='kaomoji',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
-        'Intended Audience :: Developers',
         'Natural Language :: English',
+        "License :: OSI Approved :: MIT License",
         'Programming Language :: Python :: 3.6',
+        "Operating System :: OS Independent",
     ],
     test_suite="test",
 )
