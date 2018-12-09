@@ -64,4 +64,4 @@ kao.all_kaomoji()
 ```
 
 ## License
-This sample code is licensed under the [MIT License](./LICENSE).
+This sample code is licensed under the [MIT License](https://github.com/shibuiwilliam/py-kaomoji/blob/master/LICENSE).
