@@ -14,7 +14,7 @@ info = sys.version_info
 
 setup(
     name='py_kaomoji',
-    version='0.1',
+    version='0.1.1',
     description='Python Boilerplate contains all the boilerplate you need to create a Python package.',
     long_description=readme,
     author='Shibui Yusuke',
