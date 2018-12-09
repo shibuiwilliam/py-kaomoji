@@ -22,7 +22,6 @@ setup(
     url='https://github.com/shibuiwilliam/py-kaomoji',
     packages=find_packages(),
     include_package_data=True,
-    zip_safe=False,
     keywords='kaomoji',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -31,5 +30,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         "Operating System :: OS Independent",
     ],
+    entry_points = {
+        'console_scripts': ['kao=kaomoji.kaomoji:main'],
+    },
     test_suite="test",
 )
