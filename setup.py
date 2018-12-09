@@ -14,11 +14,11 @@ info = sys.version_info
 
 setup(
     name='py_kaomoji',
-    version='0.1.3.3',
+    version='0.1.3.5',
     description='This is a Kaomoji library for Python for Japanese.',
     long_description=readme,
     long_description_content_type='text/markdown',
-    author='Shibui Yusuke',
+    author='shibuiwilliam',
     author_email='shibuiyusuke@gmail.com',
     url='https://github.com/shibuiwilliam/py-kaomoji',
     packages=find_packages(),
